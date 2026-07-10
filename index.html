@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>NSI Première — Cours, exercices et TP</title>
+<style>
+  :root {
+    --bleu: #1f4e79; --bleu-2: #2d6da8; --fond: #f6f8fb; --carte: #ffffff;
+    --texte: #1c2733; --gris: #5b6b7b; --bord: #e3e9f1;
+    --c-cours: #1f4e79; --c-exos: #7a3fa0; --c-tp: #1e6b3c; --c-projet: #b45309;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #10161d; --carte: #1a232e; --texte: #e8eef5;
+            --gris: #9db0c3; --bord: #2a3644; --bleu-2: #6aa5d8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+         Roboto, sans-serif; background: var(--fond); color: var(--texte);
+         line-height: 1.55; }
+  header { background: linear-gradient(135deg, var(--bleu), #153a5c);
+           color: #fff; padding: 2.2rem 1.5rem 2rem; }
+  .int { max-width: 900px; margin: 0 auto; }
+  header h1 { margin: 0 0 .3rem; font-size: 1.9rem; }
+  header p { margin: 0; opacity: .85; }
+  main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+  h2 { color: var(--bleu-2); font-size: 1.2rem; margin: 2rem 0 .8rem;
+       border-bottom: 2px solid var(--bord); padding-bottom: .35rem; }
+  .carte { background: var(--carte); border: 1px solid var(--bord);
+           border-radius: 10px; padding: .9rem 1.1rem; margin: .6rem 0;
+           display: flex; flex-wrap: wrap; align-items: center;
+           justify-content: space-between; gap: .6rem; }
+  .carte h3 { margin: 0; font-size: 1rem; font-weight: 600; }
+  .num { display: inline-block; background: var(--bleu-2); color: #fff;
+         border-radius: 6px; padding: .1rem .5rem; font-size: .85rem;
+         margin-right: .4rem; }
+  .docs { display: flex; gap: .45rem; flex-wrap: wrap; }
+  .doc { text-decoration: none; color: #fff; padding: .3rem .75rem;
+         border-radius: 999px; font-size: .85rem; font-weight: 600; }
+  .doc:hover { filter: brightness(1.15); }
+  .cours { background: var(--c-cours); }
+  .exos { background: var(--c-exos); }
+  .tp { background: var(--c-tp); }
+  .projet { background: var(--c-projet); }
+  footer { text-align: center; color: var(--gris); font-size: .85rem;
+           padding: 2rem 1rem; }
+</style>
+</head>
+<body>
+<header><div class="int">
+  <h1>NSI Première</h1>
+  <p>Cours, exercices et TP — spécialité Numérique et Sciences Informatiques,
+     année 2026-2027</p>
+</div></header>
+<main>
+    <section>
+      <h2>Période 1 — de la rentrée à la Toussaint</h2>
+      <article class="carte">
+        <h3><span class="num">S1</span> Variables, types de base et expressions</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-01/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-01/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-01/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S2</span> Conditions et boucles</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-02/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-02/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-02/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S3</span> Les fonctions</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-03/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-03/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-03/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S4</span> Erreurs et bugs · La logique binaire</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-04/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-04/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-04/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S5</span> La représentation des nombres</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-05/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-05/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-05/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S6</span> Caractères · Interaction textuelle</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-06/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-06/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-06/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S7</span> Interaction graphique · Mini-projet 1</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-07/cours.pdf">Cours</a><a class="doc projet" href="docs/semaine-07/mini-projet-1.pdf">Mini-projet</a></div>
+      </article>
+    </section>
+    <section>
+      <h2>Période 2 — de la Toussaint à Noël</h2>
+      <article class="carte">
+        <h3><span class="num">S8</span> Types structurés : tuples</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-08/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-08/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-08/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S9</span> Tableaux et chaînes de caractères</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-09/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-09/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-09/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S10</span> Dictionnaires · Valeurs et références</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-10/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-10/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-10/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S11</span> Parcours et recherche dans un tableau</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-11/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-11/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-11/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S12</span> Matrices : tableaux de tableaux</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-12/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-12/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-12/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S13</span> Spécifier, documenter, tester</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-13/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-13/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-13/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S14</span> Révisions · Mini-projet 2</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-14/cours.pdf">Cours</a><a class="doc projet" href="docs/semaine-14/mini-projet-2.pdf">Mini-projet</a></div>
+      </article>
+    </section>
+    <section>
+      <h2>Période 3 — de Noël aux vacances d'hiver</h2>
+      <article class="carte">
+        <h3><span class="num">S15</span> Recherche dichotomique et complexité</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-15/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-15/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-15/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S16</span> Tri par sélection</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-16/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-16/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-16/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S17</span> Tri par insertion</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-17/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-17/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-17/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S18</span> Données en tables : le format CSV</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-18/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-18/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-18/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S19</span> Interroger une table</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-19/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-19/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-19/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S20</span> Trier et fusionner des tables</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-20/cours.pdf">Cours</a><a class="doc tp" href="docs/semaine-20/tp.pdf">TP</a></div>
+      </article>
+    </section>
+    <section>
+      <h2>Période 4 — d'hiver à printemps</h2>
+      <article class="carte">
+        <h3><span class="num">S21</span> Architecture de l'ordinateur</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-21/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-21/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-21/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S22</span> Système d'exploitation · Ligne de commande</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-22/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-22/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-22/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S23</span> Périphériques · Système de fichiers</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-23/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-23/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-23/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S24</span> Réseau : transporter l'information</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-24/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-24/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-24/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S25</span> Réseau : IP et Internet</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-25/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-25/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-25/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S26</span> Le Web : HTML et CSS</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-26/cours.pdf">Cours</a><a class="doc tp" href="docs/semaine-26/tp.pdf">TP</a></div>
+      </article>
+    </section>
+    <section>
+      <h2>Période 5 — de printemps à l'été</h2>
+      <article class="carte">
+        <h3><span class="num">S27</span> Le Web interactif : HTTP, formulaires</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-27/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-27/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-27/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S28</span> IA : les k plus proches voisins</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-28/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-28/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-28/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S29</span> Algorithmes gloutons</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-29/cours.pdf">Cours</a><a class="doc exos" href="docs/semaine-29/exercices.pdf">Exercices</a><a class="doc tp" href="docs/semaine-29/tp.pdf">TP</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S30</span> Au-delà de Python · Projet final</h3>
+        <div class="docs"><a class="doc cours" href="docs/semaine-30/cours.pdf">Cours</a><a class="doc projet" href="docs/semaine-30/projet-final.pdf">Projet final</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S31</span> Projet final</h3>
+        <div class="docs"><a class="doc projet" href="docs/semaine-31/suivi-projet.pdf">Fiche de suivi</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S32</span> Projet final · Révisions</h3>
+        <div class="docs"><a class="doc exos" href="docs/semaine-32/revisions.pdf">Révisions</a></div>
+      </article>
+      <article class="carte">
+        <h3><span class="num">S33</span> Soutenances · Bilan</h3>
+        <div class="docs"><a class="doc projet" href="docs/semaine-33/soutenances.pdf">Soutenances</a></div>
+      </article>
+    </section>
+  <section>
+    <h2>Mode d'emploi</h2>
+    <p>Chaque semaine : la fiche de <strong>cours</strong>, la feuille
+    d'<strong>exercices</strong> et le sujet de <strong>TP</strong>.
+    Les corrigés sont travaillés en classe. Support :
+    manuel Hachette <em>NSI 1re Spécialité</em> (éd. 2021).</p>
+  </section>
+</main>
+<footer>NSI Première · mis à jour au fil de l'année</footer>
+</body>
+</html>
